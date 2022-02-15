@@ -1,0 +1,24 @@
+It is a fully feature client and server-side routing
+library for react.
+
+Helps create and navigate between different URLs that
+make up your web application.
+
+Provides unique URLs for differnt components in the app 
+and make the UI easily shareable with other users.
+
+Configuring routes with react router
+1) connect the URL in the browser with the react application.
+   For that, react router provide a component called browserRouter
+   with which we need to wrap our entire app.
+
+  This will allow us to use all the features from react 
+  router within the app component tree.
+
+Routes --> Within this component, we define the individual 
+           route using the Route component 
+
+          On Route component, we specify two props :-
+          1) path -> which reflect the path in the URL.
+          2) element -> what is the element need to be render when the URL matches the path.
+          
