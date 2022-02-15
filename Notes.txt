@@ -21,4 +21,9 @@ Routes --> Within this component, we define the individual
           On Route component, we specify two props :-
           1) path -> which reflect the path in the URL.
           2) element -> what is the element need to be render when the URL matches the path.
-          
+
+
+
+Link
+To navigate to another route, react router provides 
+us with the link component
