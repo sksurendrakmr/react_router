@@ -10,3 +10,9 @@ nav {
   justify-content: space-around;
   height: 3rem;
 }
+
+/* M-1 */
+/* nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+} */

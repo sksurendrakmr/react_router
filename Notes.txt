@@ -39,5 +39,29 @@ Link
 -> Link element renders an anchor element in the DOM. But instead of href
    attribute, we pass 'to' as props and specify the path for the configured route.
 
- 
+Active Links
+=============
+By default the link which we are rendering using Link component will look same
+irrespective of which route we are currently viewing.
 
+In practical web application, it is common to style the link corresponding to the 
+active route in a different way. It also improves the User experience.
+
+React Router provides another component called NavLink which knows whether or not it 
+is active link. 
+
+We can use that component to style the active link in navbar.
+
+This NavLink component by default it receives an active class when the link is 
+the current route.
+
+Why Link component instead of NavLink component??
+
+NavLink component specifically meant for building components like
+navbar or breadcrumbs or set of tabs where we would like to highlight the 
+current selected item and provide useful context with screen readers.
+
+
+If we want to navigate to routes from other parts of the app, Link should
+be the component to use as we wouldn't want the active class being applied when 
+it is not needed.
