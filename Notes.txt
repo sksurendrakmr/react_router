@@ -1,3 +1,5 @@
+Intro
+==========
 It is a fully feature client and server-side routing
 library for react.
 
@@ -7,7 +9,13 @@ make up your web application.
 Provides unique URLs for differnt components in the app 
 and make the UI easily shareable with other users.
 
+Installation
+===============
+To install react router 6 for this application 
+npm install react-router-dom@6
+
 Configuring routes with react router
+=====================================
 1) connect the URL in the browser with the react application.
    For that, react router provide a component called browserRouter
    with which we need to wrap our entire app.
@@ -25,5 +33,11 @@ Routes --> Within this component, we define the individual
 
 
 Link
-To navigate to another route, react router provides 
-us with the link component
+-> Routing to different routes using an element in the UI.
+-> To navigate to another route, react router provides 
+   us with the link component
+-> Link element renders an anchor element in the DOM. But instead of href
+   attribute, we pass 'to' as props and specify the path for the configured route.
+
+ 
+
