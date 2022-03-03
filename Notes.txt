@@ -65,3 +65,7 @@ current selected item and provide useful context with screen readers.
 If we want to navigate to routes from other parts of the app, Link should
 be the component to use as we wouldn't want the active class being applied when 
 it is not needed.
+
+Navigating Programatically
+Sometimes, we might need to programatically navigate to a particular route.
+To navigate programatically, react router provides 'useNavigate' hook.
