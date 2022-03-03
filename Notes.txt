@@ -69,3 +69,19 @@ it is not needed.
 Navigating Programatically
 Sometimes, we might need to programatically navigate to a particular route.
 To navigate programatically, react router provides 'useNavigate' hook.
+
+
+Configuring No Match Route 
+
+We need to inform user if route path is not exist in the application.
+The user might assume that the app is still loading or there is an error in the 
+slash user route.
+
+It would be better to inform user that the url does not match any route in our 
+application.
+
+We will create a component that will be render for url that don't match any
+of the configured routes.
+
+path = "*" has special meaning in react router.
+It means this route will match only when no other routes do.
