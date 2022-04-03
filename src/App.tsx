@@ -9,6 +9,9 @@ import { NoMatch } from "./components/NoMatch";
 import { Product } from "./components/Product";
 import { FeaturedProduct } from "./components/FeaturedProduct";
 import { NewProducts } from "./components/NewProducts";
+import { Users } from "./components/Users";
+import { UserDetails } from "./components/UserDetails";
+import Admin from "./components/Admin";
 
 function App() {
   return (
@@ -23,6 +26,15 @@ function App() {
           <Route path="featured" element={<FeaturedProduct />} />
           <Route path="featured" element={<FeaturedProduct />} />
           <Route path="new" element={<NewProducts />} />
+        </Route>
+        <Route path="users" element={<Users />} />
+        <Route path="users/:id" element={<UserDetails />} />
+        <Route path="users/admin" element={<Admin />} />
+
+        {/* Nested routes for dynamic routes */}
+        <Route path="users" element={<Users />}>
+          <Route path=":id" element={<UserDetails />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>

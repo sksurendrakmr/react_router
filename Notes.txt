@@ -145,3 +145,17 @@ So when we have nested routes and we want a route to be rendered at the
 parent url , make use of index route.
 Index route will contain the index props instead of the path props. 
 The path will be the same as parent route.
+
+Dynamic Routes 
+==========
+id will match with any value as long as the pattern is same.
+meaning id will be any string, not just a number.
+
+
+Admin page will be render when url matches with /users/admin.
+React router first match the routes which are more specific.
+
+React router first try to find the matching routes and onlyif that is not 
+found then it will match with dynamic routes.
+
+Dynamic routes can be nested as well.
