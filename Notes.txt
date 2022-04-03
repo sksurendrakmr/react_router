@@ -122,3 +122,26 @@ to the matching child routes from parent list of routes.
 
 One of the common usecases is to have a common layout
 for a feature in our application.
+
+
+Index Route 
+============
+In case of nested routes, child routes renders only 
+when the url is /product/featured.
+
+But when the url is /product, we might still want to display
+the list of featured products.
+
+That can be achieved using an index route in react router.
+
+Index routes is also going to be nested routes.
+
+But in case of index routes instead of passing path props
+we will specify 'index' props.
+This index props will now share the path of the parent 
+route which is products.
+
+So when we have nested routes and we want a route to be rendered at the 
+parent url , make use of index route.
+Index route will contain the index props instead of the path props. 
+The path will be the same as parent route.
