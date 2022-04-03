@@ -164,3 +164,16 @@ Dynamic routes can be nested as well.
 URL params
 ===
 In typical applications, we need to extract the user id and do something with that id.
+
+
+Search params
+URL params is not the only way to add parameters 
+to a route.
+we can also add optional query string
+
+E.g. users/?filter=active
+
+These parameters are called Search params in react router.
+
+Using Search params is common when we have to apply filters in a 
+listing page.
