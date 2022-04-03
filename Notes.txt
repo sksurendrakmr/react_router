@@ -159,3 +159,8 @@ React router first try to find the matching routes and onlyif that is not
 found then it will match with dynamic routes.
 
 Dynamic routes can be nested as well.
+
+
+URL params
+===
+In typical applications, we need to extract the user id and do something with that id.
