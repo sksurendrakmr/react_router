@@ -177,3 +177,8 @@ These parameters are called Search params in react router.
 
 Using Search params is common when we have to apply filters in a 
 listing page.
+
+Relative Links 
+==============
+Relative link is a link that doesn't start with '/' slash
+and will inherit the closest route in which they are rendered.
