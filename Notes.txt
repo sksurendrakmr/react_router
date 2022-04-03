@@ -85,3 +85,40 @@ of the configured routes.
 
 path = "*" has special meaning in react router.
 It means this route will match only when no other routes do.
+
+
+Nested Routes 
+
+React router also helps to switch between a portion
+of the view inside the page.
+
+To acheive this, we use nested routes.
+
+steps
+====
+1. Configure a new route to the products page and 
+   add a link in the nav bar.
+
+2. Add another set of navigation links within the products component.
+
+3. Creates components that need to be render for this nested routes 
+   and also configured the new routes (Nested routes).
+
+
+The special about nested routes is react router automatically
+forms the full path to the children routes.
+
+So the path will /products/featured and /products/new 
+
+Thus, now we have configured routes to render the child 
+components within the parent component.
+
+However, the product page still doesn't know where to render 
+the child component.
+For that react router provides an outlet component.
+
+The outlet component renders the component corresponding 
+to the matching child routes from parent list of routes.
+
+One of the common usecases is to have a common layout
+for a feature in our application.
