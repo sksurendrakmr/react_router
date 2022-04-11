@@ -264,4 +264,5 @@ Step 4 - Implement Login Route and create a Login component
          And finally add a login button in navBar.
          This login button only be shown when user is not logged in.
 
-         
+Step 5 - Display loggedIn user name in the profile component and also add 
+         a logout button.
