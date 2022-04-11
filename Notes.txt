@@ -219,3 +219,31 @@ fallback props which can be any react element.
 
 This is how we can optimize the initial load time
 with react router, react suspense and dynamic import.
+
+
+=====
+#Authentication (Handle Authentication with react router)
+======
+
+When building web applications we will come across the
+need to protect some routes in the app from user who are not 
+logged in.
+
+React router doesn't have feature of protect routes
+but we can implement the functionality without much difficulty.
+
+Here, we see how to protect routes using react router 
+and the context Api from react.
+
+Scenario
+Add a new Link called Profile and it is protected route.
+If we are not logged in we will be redirected to the login 
+page.
+
+From there, we click login button and then we will then be able 
+to view the profile page which display the logged in username and 
+this will also have logout button and on click of it, it will navigated back
+to the home page.
+
+
+Step 1 - Create Profile component and add routes in nav and App.tsx file.
