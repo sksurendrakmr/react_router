@@ -14,6 +14,7 @@ import { UserDetails } from "./components/UserDetails";
 import Admin from "./components/Admin";
 import { Profile } from "./components/Profile";
 import { AuthProvider } from "./components/auth";
+import { Login } from "./components/Login";
 const LazyAbout = React.lazy(() => import("./components/About")); //converted into an module that contains a default exported react component
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           </Route>
           {/* This route should be protected route and accessible only if the user is logged in */}
           <Route path="profile" element={<Profile />} />
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </AuthProvider>

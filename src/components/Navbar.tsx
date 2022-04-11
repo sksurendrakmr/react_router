@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useAuth } from "./auth";
 export const Navbar = () => {
   /**
    * M-2 - Using Javascript.
@@ -12,6 +13,8 @@ export const Navbar = () => {
    * component. we can wither make use of the active class that is applied or
    * isActive boolean flag injected into the style function.
    */
+
+  const auth = useAuth();
   const navLinkStyles = ({ isActive }: { isActive: boolean }) => {
     return {
       fontWeight: isActive ? "bold" : "normal",
@@ -32,6 +35,11 @@ export const Navbar = () => {
       <NavLink style={navLinkStyles} to="/profile">
         Profile
       </NavLink>
+      {!auth.user && (
+        <NavLink style={navLinkStyles} to="/login">
+          Profile
+        </NavLink>
+      )}
     </nav>
   );
 };

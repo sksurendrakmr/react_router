@@ -255,3 +255,13 @@ to the entire component tree using react context.
 
 
 Steo 3 - Wrap entire component tree with AuthProvider.
+
+
+Step 4 - Implement Login Route and create a Login component
+         which will have input element and login button.
+         once login happened, user navigate to home page.
+
+         And finally add a login button in navBar.
+         This login button only be shown when user is not logged in.
+
+         
