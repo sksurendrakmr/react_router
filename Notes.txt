@@ -247,3 +247,11 @@ to the home page.
 
 
 Step 1 - Create Profile component and add routes in nav and App.tsx file.
+
+Step 2 - We need to implement the functionality to figure out if the user is logged in or not.
+
+To keep it simple, we are going to maintain a user state variable and provided it
+to the entire component tree using react context. 
+
+
+Steo 3 - Wrap entire component tree with AuthProvider.
