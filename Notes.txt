@@ -182,3 +182,40 @@ Relative Links
 ==============
 Relative link is a link that doesn't start with '/' slash
 and will inherit the closest route in which they are rendered.
+
+
+Lazy loading
+=============
+Lazy loading is a technique where components 
+not required on the home page can be split into 
+separate code bundles and downloaded only when the 
+user navigates to that page.
+
+We can think of it as incrementally downloading
+the application.
+
+It helps reduce initial load time thereby improving 
+performance.
+
+Here, we will learn how to lazy load the about page.
+
+To Lazy load a route, we need to use dynamic imports
+and react suspense.
+
+Step-1 
+Comment out the import statement of about page 
+and instead use dynamic import syntax.
+
+For Dynamic import, we need default import of a component.
+
+
+Step-2 
+Include the lazy component as part of the route 
+configuration
+
+Step-3
+Wrap the LazyAbout component with react suspense.
+fallback props which can be any react element.
+
+This is how we can optimize the initial load time
+with react router, react suspense and dynamic import.
