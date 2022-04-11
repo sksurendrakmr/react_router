@@ -266,3 +266,11 @@ Step 4 - Implement Login Route and create a Login component
 
 Step 5 - Display loggedIn user name in the profile component and also add 
          a logout button.
+
+Step 6- Protect Profile Route.
+
+Protecting a route should be reuseable piece of code.
+So, we will create a reusable wrapper component that decides
+if the component can be rendered or if the user has to logIn first.
+
+
